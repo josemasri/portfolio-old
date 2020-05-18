@@ -1,0 +1,87 @@
+.nav {
+  background-color: #2c3e50;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+
+.mainNav {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.links {
+  background-color: #2c3e50;
+  color: #fff;
+  li {
+    padding: 1.6rem 0;
+  }
+}
+
+.hamburgerBtn {
+  border: none;
+  padding: 1.5rem 3rem;
+  background-color: #1abc9c;
+  color: #fff;
+  border-radius: 2rem;
+  outline: none;
+}
+
+.mainLinks {
+  display: none;
+}
+
+a:hover {
+  color: #1abc9c;
+}
+
+$breakpoint-tablet: 768px;
+
+// =====================
+// Tablet
+// =====================
+@media (min-width: $breakpoint-tablet) {
+  .links {
+    padding-left: 5rem;
+    a {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+// =====================
+// PC Styles
+// =====================
+$breakpoint-pc: 1024px;
+
+@media (min-width: $breakpoint-pc) {
+  .nav {
+    padding-left: 15rem;
+  }
+
+  .hamburgerBtn {
+    display: none;
+  }
+
+  .mainLinks {
+    display: flex;
+    margin-right: 20rem;
+    a {
+      margin-left: 8rem;
+      font-weight: bold;
+    }
+  }
+
+  .links {
+    display: none;
+  }
+}

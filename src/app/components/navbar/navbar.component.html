@@ -1,0 +1,18 @@
+<nav class="nav">
+  <div class="mainNav animate__animated animate__fadeInDown">
+    <div class="logo"><a href="#">MarroCoder</a></div>
+    <div class="mainLinks">
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <button class="hamburgerBtn" (click)="toggle = !toggle;">
+      <fa-icon [icon]="faHamburger"></fa-icon>
+    </button>
+  </div>
+  <ul class="links animate__animated animate__bounceInRight" *ngIf="toggle">
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
